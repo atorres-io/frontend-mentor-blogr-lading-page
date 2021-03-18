@@ -1,9 +1,45 @@
+ul {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+}
+
+ul li {
+	position: relative;
+	cursor: pointer;
+	height: 50px;
+	line-height: 50px;
+	color: var(--color-font-light);
+}
+
+ul.list__active--dropdown > li {
+	padding: 0 1rem;
+	margin: 0 0.5rem;
+}
+
+ul.list__active--dropdown > li:after {
+	position: absolute;
+	top: 20px;
+	right: 0;
+	content: url('../images/icon-arrow-light.svg');
+	width: 0.6rem;
+	height: 0.6rem;
+	transition: transform 350ms cubic-bezier(0.25, 0.1, 0.25, 1.65);
+}
+
+ul.list__active--dropdown > li:hover:after {
+	transform: rotate(180deg);
+}
+
 ul li ul {
 	position: absolute;
 	top: 3rem;
 	left: 0;
 	width: 200px;
 	height: auto;
+	padding: 1.5rem 3rem 1.5rem 2rem;
 	box-shadow: 0 12px 24px -12px rgb(0 0 0 / 24%);
 	background-color: var(--color-background);
 	border-radius: var(--border-radius-sm) var(--border-radius-sm)
@@ -16,6 +52,10 @@ ul li ul {
 	visibility: hidden;
 	pointer-events: none;
 	user-select: none;
+}
+
+ul li:hover {
+	text-decoration: underline;
 }
 
 ul li:hover ul {
@@ -34,16 +74,21 @@ ul li ul {
 }
 
 ul li ul li {
-	width: 100%;
+	width: auto;
+	height: 40px;
+	line-height: 40px;
 }
 
 ul li ul li a {
 	display: block;
-	width: 100%;
+	width: auto;
 	height: 100%;
 	color: var(--color-font-dark);
-	padding-left: 1.5vw;
-	transition: background-color 250ms ease;
+	transition: font-weight 250ms ease;
+}
+
+ul li ul li:hover {
+	text-decoration: none;
 }
 
 ul li ul li:first-child a {
@@ -55,5 +100,5 @@ ul li ul li:last-child a {
 }
 
 ul li ul li a:hover {
-	background-color: rgb(0 0 0 / 10%);
+	font-weight: 700;
 }

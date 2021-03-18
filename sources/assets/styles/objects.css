@@ -6,7 +6,7 @@
 
 .logotype img {
 	width: auto;
-	height: 45px;
+	height: 40px;
 	object-position: center center;
 	object-fit: contain;
 }
@@ -34,26 +34,39 @@
 	margin: 0 1rem;
 }
 
+.link:hover {
+	text-decoration: underline;
+}
+
 .button__primary--fill {
 	appearance: none;
-	font-weight: 600;
-	font-size: clamp(14px, 2vw, 16px);
 	color: var(--color-primary);
 	margin: 0 1rem;
 	padding: 1rem 2rem;
 	border: none;
 	border-radius: var(--border-radius-fl);
 	background-color: var(--color-background);
+	transition: background-color 250ms ease, color 250ms ease;
+}
+
+.button__primary--fill:hover {
+	text-decoration: none;
+	background-color: var(--color-primary-hover);
+	color: var(--color-font-light);
 }
 
 .button__primary--outline {
 	appearance: none;
-	font-weight: 600;
-	font-size: clamp(14px, 2vw, 16px);
 	color: var(--color-font-light);
 	margin: 0 1rem;
 	padding: 1rem 2rem;
 	border: solid 1px var(--color-background);
 	border-radius: var(--border-radius-fl);
 	background-color: transparent;
+	transition: background-color 250ms ease, color 250ms ease;
+}
+
+.button__primary--outline:hover {
+	background-color: var(--color-background);
+	color: var(--color-primary);
 }

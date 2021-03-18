@@ -1,23 +1,26 @@
+@import 'https://fonts.google.com/specimen/Overpass?preview.text_type=custom';
+@import 'https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom';
+
 *,
-*::before,
-*::after {
+*:before,
+*:after {
 	margin: 0;
 	padding: 0;
 	outline: 0;
 	box-sizing: border-box;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 :root {
-	--color-background: #ffffff;
-	--color-primary: red;
-	--color-secondary: blue;
-	--color-tertiary: #2c2c2c;
-	--color-grey-low: #c1c1c1;
-	--color-grey-medium: #b6b6b6;
-	--color-grey-hard: #888888;
-	--color-font-light: #ffffff;
-	--color-font-dark: #2c2c2c;
+	--color-background: hsl(0, 0%, 100%);
+	--color-primary: hsl(356, 100%, 66%);
+	--color-primary-hover: hsl(355, 100%, 74%);
+	--color-secondary: hsl(208, 49%, 24%);
+	--color-tertiary: hsl(240, 10%, 16%);
+	--color-grey: hsl(240, 2%, 79%);
+	--color-font-light: hsl(0, 0%, 100%);
+	--color-font-grey: hsl(240, 2%, 79%);
+	--color-font-dark: hsl(208, 49%, 24%);
 	--border-radius-fl: 30rem;
 	--border-radius-xl: 5rem;
 	--border-radius-md: 2vw;

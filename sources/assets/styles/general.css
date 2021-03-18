@@ -27,6 +27,7 @@ h1 {
 	letter-spacing: -0.01562em;
 	font-style: normal;
 	text-transform: none;
+	font-family: 'Overpass', sans-serif;
 }
 
 h2 {
@@ -36,6 +37,7 @@ h2 {
 	letter-spacing: -0.00833em;
 	font-style: normal;
 	text-transform: none;
+	font-family: 'Overpass', sans-serif;
 }
 
 h3 {
@@ -45,6 +47,7 @@ h3 {
 	letter-spacing: 0;
 	font-style: normal;
 	text-transform: none;
+	font-family: 'Overpass', sans-serif;
 }
 
 h4.subtitle1 {
@@ -56,11 +59,12 @@ h4.subtitle1 {
 	text-align: center;
 	font-style: normal;
 	text-transform: none;
+	font-family: 'Overpass', sans-serif;
 }
 
 p {
 	font-weight: 400;
-	font-size: clamp(14px, 2vw, 15px);
+	font-size: clamp(14px, 2vw, 16px);
 	line-height: 1.5;
 	letter-spacing: 0.00938em;
 	font-style: normal;
@@ -71,7 +75,7 @@ li,
 span,
 button {
 	font-weight: 400;
-	font-size: clamp(14px, 2vw, 15px);
+	font-size: clamp(14px, 2vw, 16px);
 	line-height: 1.5;
 	letter-spacing: 0.00938em;
 	font-style: normal;
@@ -87,18 +91,18 @@ span.list--item {
 	color: var(--color-font-light);
 }
 
-span.list--item::after {
+span.list--item:after {
 	position: absolute;
 	top: 1.2rem;
 	right: -1.5rem;
-	content: url('../images/icon_arrow_down.svg');
+	content: url('../images/icon-arrow-dark.svg');
 	width: 0.95rem;
 	height: 0.95rem;
 }
 
 a {
 	font-weight: 400;
-	font-size: clamp(14px, 2vw, 15px);
+	font-size: clamp(14px, 2vw, 16px);
 	letter-spacing: 0.00938em;
 	font-style: normal;
 	text-transform: none;
@@ -114,9 +118,10 @@ a.list__link--item {
 header {
 	width: 100%;
 	height: auto;
-	background-color: var(--color-primary); /* Será imagen */
+	background: url('../images/bg-pattern-intro.svg') no-repeat 26% 53% / 220%,
+		linear-gradient(-45deg, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
 	border-bottom-left-radius: var(--border-radius-xl);
-	padding: 4vh 8vw;
+	padding: 5vh 8vw;
 }
 
 main {
@@ -169,34 +174,4 @@ hgroup div.container__buttons--inline {
 	justify-content: center;
 	align-items: center;
 	margin: 1.7rem 0;
-}
-
-ul {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-	align-items: center;
-	list-style: none;
-}
-
-ul li {
-	position: relative;
-	cursor: pointer;
-	height: 50px;
-	line-height: 50px;
-	color: var(--color-font-light);
-}
-
-ul.list__active--dropdown > li {
-	padding: 0 1rem;
-	margin: 0 0.5rem;
-}
-
-ul.list__active--dropdown > li::after {
-	position: absolute;
-	top: 20px;
-	right: 0;
-	content: url('../images/icon_arrow_down.svg');
-	width: 0.6rem;
-	height: 0.6rem;
 }
