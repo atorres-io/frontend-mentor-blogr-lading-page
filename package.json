@@ -1,0 +1,8 @@
+{
+	"name": "frontend-mentor-blogr-landing-page",
+	"version": "1.0.0",
+	"private": false,
+	"description": "Blogr landing page of Frontend Mentor Challenge",
+	"main": "app.js",
+	"author": "Alejandro Torres"
+}
