@@ -1,0 +1,74 @@
+nav .container__nav--left {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	height: 100%;
+}
+
+nav .container__nav--right {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	height: 100%;
+}
+
+.nav__mobile {
+	display: none;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 50px;
+	background-color: transparent;
+}
+
+.dropdown__mobile {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	background-color: var(--color-tertiary);
+	clip-path: circle(0% at 100% 0); /* Active: circle(150% at 100% 0) */
+	transition: clip-path 750ms ease;
+}
+
+.main__section--default {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: auto;
+}
+
+/* Containers Grid 50% */
+.main__section--default > div {
+	width: 50%;
+	height: auto;
+	padding: 0 5vw 0 6vw;
+	margin-bottom: 12rem;
+	text-align: left;
+}
+
+.main__section--default h3 {
+	margin-bottom: 1.3rem;
+}
+
+.main__section--special {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	margin-bottom: 15rem;
+}

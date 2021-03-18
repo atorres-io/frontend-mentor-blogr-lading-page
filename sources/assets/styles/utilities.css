@@ -1,0 +1,29 @@
+.font--light {
+	color: var(--color-font-light);
+}
+
+.font--dark {
+	color: var(--color-font-dark);
+}
+
+.element__disabled {
+	user-select: none;
+	pointer-events: none;
+}
+
+.align--reverse {
+	flex-direction: row-reverse;
+}
+
+.align--normal {
+	flex-direction: row;
+}
+
+.white-space--xl {
+	margin: 9rem 0 6rem 0;
+}
+
+.white-space--sm {
+	width: 100%;
+	height: 2rem;
+}
