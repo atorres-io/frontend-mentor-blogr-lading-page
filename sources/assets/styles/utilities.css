@@ -1,14 +1,12 @@
-.font--light {
-	color: var(--color-font-light);
+.text__color--white {
+	color: var(--text-white);
 }
 
-.font--dark {
-	color: var(--color-font-dark);
-}
-
-.element__disabled {
-	user-select: none;
+.element--disabled {
+	transform: translateX(-30px);
+	opacity: 0;
 	pointer-events: none;
+	user-select: none;
 }
 
 .align--reverse {
@@ -17,13 +15,4 @@
 
 .align--normal {
 	flex-direction: row;
-}
-
-.white-space--xl {
-	margin: 9rem 0 6rem 0;
-}
-
-.white-space--sm {
-	width: 100%;
-	height: 2rem;
 }

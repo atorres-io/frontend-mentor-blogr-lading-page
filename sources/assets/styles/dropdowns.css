@@ -11,7 +11,11 @@ ul li {
 	cursor: pointer;
 	height: 50px;
 	line-height: 50px;
-	color: var(--color-font-light);
+	color: var(--text-white);
+}
+
+ul li:hover {
+	text-decoration: underline;
 }
 
 ul.list__active--dropdown > li {
@@ -37,40 +41,32 @@ ul li ul {
 	position: absolute;
 	top: 3rem;
 	left: 0;
-	width: 200px;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	justify-content: center;
+	min-width: 200px;
+	width: auto;
 	height: auto;
 	padding: 1.5rem 3rem 1.5rem 2rem;
 	box-shadow: 0 12px 24px -12px rgb(0 0 0 / 24%);
-	background-color: var(--color-background);
-	border-radius: var(--border-radius-sm) var(--border-radius-sm)
-		var(--border-radius-md) var(--border-radius-sm);
+	background-color: var(--main);
+	border-radius: var(--radius-sm) var(--radius-sm) var(--radius-md)
+		var(--radius-sm);
 	transition: transform 250ms ease, opacity 250ms ease;
 
 	/* Elements to hover interaction */
 	transform: translateX(-30px);
 	opacity: 0;
-	visibility: hidden;
 	pointer-events: none;
 	user-select: none;
-}
-
-ul li:hover {
-	text-decoration: underline;
 }
 
 ul li:hover ul {
 	transform: translateX(0);
 	opacity: 1;
-	visibility: visible;
 	pointer-events: all;
 	user-select: all;
-}
-
-ul li ul {
-	display: flex;
-	flex-flow: column nowrap;
-	align-items: flex-start;
-	justify-content: center;
 }
 
 ul li ul li {
@@ -79,26 +75,26 @@ ul li ul li {
 	line-height: 40px;
 }
 
-ul li ul li a {
-	display: block;
-	width: auto;
-	height: 100%;
-	color: var(--color-font-dark);
-	transition: font-weight 250ms ease;
-}
-
 ul li ul li:hover {
 	text-decoration: none;
 }
 
-ul li ul li:first-child a {
-	border-radius: var(--border-radius-sm) var(--border-radius-sm) 0 0;
-}
-
-ul li ul li:last-child a {
-	border-radius: 0 0 var(--border-radius-md) var(--border-radius-sm);
+ul li ul li a {
+	display: block;
+	width: auto;
+	height: 100%;
+	color: var(--text-body);
+	transition: font-weight 250ms ease;
 }
 
 ul li ul li a:hover {
 	font-weight: 700;
+}
+
+ul li ul li:first-child a {
+	border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+}
+
+ul li ul li:last-child a {
+	border-radius: 0 0 var(--radius-md) var(--radius-sm);
 }

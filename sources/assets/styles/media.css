@@ -15,10 +15,12 @@
 	}
 
 	header {
+		background: url(../images/bg-pattern-intro.svg) no-repeat 35% 35% / 380%,
+			var(--gradient-primary);
 		border-bottom-left-radius: 6rem;
 	}
 
-	hgroup div.container__buttons--inline {
+	hgroup div {
 		margin: 1.2rem 0;
 	}
 

@@ -11,26 +11,20 @@
 	object-fit: contain;
 }
 
-.hamburger svg {
-	width: 30px;
-	height: 30px;
-	cursor: pointer;
+.hamburger {
+	width: auto;
+	height: auto;
 }
 
-.cross {
-	position: absolute;
-	top: 2.5rem;
-	right: 2rem;
-}
-
-.cross svg {
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
+.hamburger img {
+	width: auto;
+	height: 20px;
+	object-position: center center;
+	object-fit: contain;
 }
 
 .link {
-	color: var(--color-font-light);
+	color: var(--text-white);
 	margin: 0 1rem;
 }
 
@@ -40,33 +34,35 @@
 
 .button__primary--fill {
 	appearance: none;
-	color: var(--color-primary);
+	color: var(--primary);
+	font-weight: 700;
 	margin: 0 1rem;
 	padding: 1rem 2rem;
 	border: none;
-	border-radius: var(--border-radius-fl);
-	background-color: var(--color-background);
+	border-radius: var(--radius-fl);
+	background-color: var(--main);
 	transition: background-color 250ms ease, color 250ms ease;
 }
 
 .button__primary--fill:hover {
 	text-decoration: none;
-	background-color: var(--color-primary-hover);
-	color: var(--color-font-light);
+	background-color: var(--primary-hover);
+	color: var(--text-white);
 }
 
 .button__primary--outline {
 	appearance: none;
-	color: var(--color-font-light);
+	color: var(--text-white);
+	font-weight: 700;
 	margin: 0 1rem;
 	padding: 1rem 2rem;
-	border: solid 1px var(--color-background);
-	border-radius: var(--border-radius-fl);
+	border: solid 1px var(--main);
+	border-radius: var(--radius-fl);
 	background-color: transparent;
 	transition: background-color 250ms ease, color 250ms ease;
 }
 
 .button__primary--outline:hover {
-	background-color: var(--color-background);
-	color: var(--color-primary);
+	background-color: var(--main);
+	color: var(--primary);
 }
