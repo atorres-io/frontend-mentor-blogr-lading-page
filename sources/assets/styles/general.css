@@ -47,7 +47,7 @@ hgroup div {
 	flex-flow: row nowrap;
 	justify-content: center;
 	align-items: center;
-	margin: 1.7rem 0;
+	margin: 2.5rem 0;
 }
 
 main {
@@ -74,6 +74,11 @@ footer section {
 	padding: 2rem 1rem;
 }
 
+hr {
+	margin: 1.2rem 0;
+	border: solid 1px var(--nav-mobile-grey);
+}
+
 /* Texts */
 
 h1,
@@ -89,7 +94,7 @@ h4 {
 
 h1 {
 	font-weight: 600;
-	font-size: clamp(2.3em, 4vw, 4em);
+	font-size: clamp(2em, 4vw, 4em);
 }
 
 h2 {
@@ -112,6 +117,7 @@ span,
 button,
 caption,
 address,
+button,
 li,
 a {
 	font-weight: 400;

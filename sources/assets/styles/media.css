@@ -9,6 +9,14 @@
 }
 
 @media only screen and (max-width: 375px) {
+	li {
+		font-weight: 700;
+	}
+
+	a {
+		font-weight: 500;
+	}
+
 	h3 {
 		padding: 0 1.3rem;
 		margin-bottom: 1rem;
@@ -18,10 +26,6 @@
 		background: url(../images/bg-pattern-intro.svg) no-repeat 35% 35% / 380%,
 			var(--gradient-primary);
 		border-bottom-left-radius: 6rem;
-	}
-
-	hgroup div {
-		margin: 1.2rem 0;
 	}
 
 	.button__primary--fill,
@@ -40,7 +44,20 @@
 		padding: 2rem;
 	}
 
-	.white-space--xl {
-		margin: 7rem 0 4rem 0;
+	ul.mobile--dropdown li {
+		font-size: 22px;
+	}
+
+	ul.mobile--dropdown ul li a {
+		font-size: 16px;
+	}
+
+	.link {
+		display: block;
+		width: 100%;
+		color: var(--text-body);
+		font-size: 22px;
+		font-weight: 700;
+		margin: 1.5rem 0;
 	}
 }

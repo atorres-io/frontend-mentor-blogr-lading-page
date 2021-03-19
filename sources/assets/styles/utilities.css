@@ -3,10 +3,15 @@
 }
 
 .element--disabled {
+	display: none;
+	transform: translateX(-30px);
+	opacity: 0;
+}
+
+.element--hidden {
 	transform: translateX(-30px);
 	opacity: 0;
 	pointer-events: none;
-	user-select: none;
 }
 
 .align--reverse {
@@ -15,4 +20,8 @@
 
 .align--normal {
 	flex-direction: row;
+}
+
+.margins--sm {
+	margin: var(--margins-sm) 0;
 }

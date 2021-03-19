@@ -18,9 +18,17 @@
 
 .hamburger img {
 	width: auto;
-	height: 20px;
 	object-position: center center;
 	object-fit: contain;
+	transition: transform 250ms ease, opacity 250ms ease;
+}
+
+.hamburger img[id='hamburger'] {
+	height: 20px;
+}
+
+.hamburger img[id='cross'] {
+	height: 25px;
 }
 
 .link {
@@ -65,4 +73,18 @@
 .button__primary--outline:hover {
 	background-color: var(--main);
 	color: var(--primary);
+}
+
+.button__secondary--fill {
+	display: block;
+	appearance: none;
+	color: var(--text-white);
+	font-weight: 700;
+	text-align: center;
+	width: 170px;
+	padding: 1.2rem 0;
+	border: none;
+	border-radius: var(--radius-fl);
+	background: var(--gradient-primary);
+	margin: auto;
 }

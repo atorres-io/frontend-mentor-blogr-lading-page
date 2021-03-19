@@ -30,13 +30,15 @@ nav .container__nav--right {
 .dropdown__mobile {
 	position: absolute;
 	top: 70px;
-	left: calc(50% - calc(95% / 2));
-	width: 95%;
-	height: 75vh;
+	left: calc(50% - calc(96% / 2));
+	width: 96%;
+	height: auto;
+	padding: 2rem;
+	text-align: center;
 	background-color: var(--main);
 	box-shadow: 0 15px 30px -10px rgb(0 0 0 / 24%);
 	border-radius: var(--radius-sm);
-	transition: transform 250ms ease;
+	transition: transform 250ms ease, opacity 250ms ease;
 	z-index: 10;
 }
 
