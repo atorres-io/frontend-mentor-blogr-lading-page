@@ -1,27 +1,35 @@
 class BlogrView {
 	constructor() {
 		this.GUI = {
-			root: document.getElementById('root'),
 			hamburger: document.getElementById('hamburger'),
-			cross: document.getElementById('cross'),
 			dropdownMobile: document.getElementById('dropdownMobile'),
 		};
+		this.state = false;
 	}
 
 	initListeners = () => {
-		this.GUI.hamburger.addEventListener('click', this._openMobileNav, false);
-		this.GUI.cross.addEventListener('click', this._closeMobileNav, false);
+		this.GUI.hamburger.addEventListener(
+			'click',
+			this.changeStateNavMobile,
+			false
+		);
 	};
 
-	_openMobileNav = () => {
-		this.GUI.root.classList.add('element__disabled');
-		this.GUI.dropdownMobile.style.clipPath = 'circle(150% at 100% 0)';
-		this.GUI.dropdownMobile.classList.remove('element__disabled');
+	changeStateNavMobile = () => {
+		this.state ? this._closeDropdown() : this._openDropdown();
 	};
 
-	_closeMobileNav = () => {
-		this.GUI.root.classList.remove('element__disabled');
-		this.GUI.dropdownMobile.style.clipPath = 'circle(0% at 100% 0)';
-		this.GUI.dropdownMobile.classList.add('element__disabled');
+	_closeDropdown = () => {
+		this.GUI.hamburger.src = 'assets/images/icon-hamburger.svg';
+		this.GUI.dropdownMobile.classList.add('element--disabled');
+
+		this.state = !this.state;
+	};
+
+	_openDropdown = () => {
+		this.GUI.hamburger.src = 'assets/images/icon-close.svg';
+		this.GUI.dropdownMobile.classList.remove('element--disabled');
+
+		this.state = !this.state;
 	};
 }
