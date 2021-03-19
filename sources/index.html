@@ -22,7 +22,7 @@
 			<nav class="nav__desktop">
 				<div class="container__nav--left">
 					<figure class="logotype"><img src="assets/images/logo.svg" alt="Logotype Blogr" /></figure>
-					<ul class="list__active--dropdown">
+					<ul class="desktop--dropdown">
 						<li>Product
 							<ul>
 								<li><a href="#">Overview</a></li>
@@ -57,13 +57,43 @@
 			<!-- Mobile version -->
 			<nav class="nav__mobile">
 				<figure class="logotype"><img src="assets/images/logo.svg" alt="Logotype Blogr" /></figure>
-				<figure class="hamburger"><img id="hamburger" src="assets/images/icon-hamburger.svg" alt="Icon Hamburger" /></figure>
+				<figure class="hamburger">
+					<img id="hamburger" src="assets/images/icon-hamburger.svg" alt="Icon Hamburger" />
+					<img class="element--disabled" id="cross" src="assets/images/icon-close.svg" alt="Icon Close" />
+				</figure>
 
-				<article class="dropdown__mobile element--disabled" id="dropdownMobile"></article>
+				<article class="dropdown__mobile element--hidden" id="dropdownMobile">
+					<ul class="mobile--dropdown">
+						<li id="productAction">Product</li>
+						<ul id="productList" style='display: none'>
+							<li><a href="#">Overview</a></li>
+							<li><a href="#">Pricing</a></li>
+							<li><a href="#">Marketplace</a></li>
+							<li><a href="#">Features</a></li>
+							<li><a href="#">Integrations</a></li>
+						</ul>
+						<li id="companyAction">Company</li>
+						<ul id="companyList" style='display: none'>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Team</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Careers</a></li>
+						</ul>
+						<li id="connectAction">Connect</li>
+						<ul id="connectList" style='display: none'>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">Newsletter</a></li>
+							<li><a href="#">LinkedIn</a></li>
+						</ul>
+					</ul>
+					<hr>
+					<a href="#" class="link">Login</a>
+					<a href="#" class="button__secondary--fill">Sign Up</a>
+				</article>
 			</nav>
 
 			<hgroup>
-				<h1 class="text__color--white">A modern publishing platform</h1>
+				<h1 class="text__color--white margins--sm">A modern publishing platform</h1>
 				<h4 class="text__color--white subtitle">Grow your audience and build your online brand</h4>
 				<div class="container__buttons--inline">
 					<a href="#" class="button__primary--fill">Start for Free</a>
