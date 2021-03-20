@@ -80,10 +80,20 @@
 
 	.main__section--default.align--normal figure {
 		background: url('../images/illustration-laptop-mobile.svg') no-repeat center
-			center / 120%;
+			center / contain;
 	}
 
 	.main__section--default figure img {
 		visibility: hidden;
+	}
+
+	footer {
+		display: block;
+		text-align: center;
+		padding: 2rem 0;
+	}
+
+	footer section {
+		width: 100%;
 	}
 }
