@@ -68,19 +68,19 @@ class BlogrView {
 	};
 
 	_hamburgerHidden = () => {
-		this.GUI.hamburger.style.display = 'none';
 		window.requestAnimationFrame(() => {
 			this.GUI.hamburger.style.opacity = '0';
 			this.GUI.hamburger.style.transform = 'translateX(-30px)';
 		});
+		this.GUI.hamburger.style.display = 'none';
 	};
 
 	_crossHidden = () => {
-		this.GUI.cross.style.display = 'none';
 		window.requestAnimationFrame(() => {
 			this.GUI.cross.style.opacity = '0';
 			this.GUI.cross.style.transform = 'translateX(-30px)';
 		});
+		this.GUI.cross.style.display = 'none';
 	};
 
 	_crossVisible = () => {
