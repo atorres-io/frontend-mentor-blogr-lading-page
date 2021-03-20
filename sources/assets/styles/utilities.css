@@ -25,3 +25,7 @@
 .margins--sm {
 	margin: var(--margins-sm) 0;
 }
+
+.text__align--center {
+	text-align: center;
+}

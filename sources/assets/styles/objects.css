@@ -88,3 +88,8 @@
 	background: var(--gradient-primary);
 	margin: auto;
 }
+
+.principal--title {
+	height: 15rem;
+	line-height: 15rem;
+}
