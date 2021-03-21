@@ -96,4 +96,35 @@
 	footer section {
 		width: 100%;
 	}
+
+	.main__section--special {
+		height: 470px;
+		position: relative;
+		background: url(../images/bg-pattern-circles.svg) no-repeat 50% -10rem / 120%,
+			var(--gradient-secondary);
+		flex-flow: column nowrap;
+		margin: 10rem 0 3rem 0;
+	}
+
+	.main__section--special div {
+		width: 100%;
+		padding: 5rem 3rem 0 3rem;
+	}
+
+	.main__section--special div h2 {
+		height: 5rem;
+	}
+
+	.main__section--special div p {
+		text-align: center;
+	}
+
+	.main__section--special figure {
+		position: absolute;
+		top: -170px;
+	}
+
+	.main__section--special figure img {
+		height: 320px;
+	}
 }

@@ -48,7 +48,7 @@ nav .container__nav--right {
 	justify-content: center;
 	align-items: flex-start;
 	width: 100%;
-	height: 800px;
+	height: 700px;
 }
 
 .main__section--default figure {
@@ -86,4 +86,34 @@ nav .container__nav--right {
 	margin-bottom: 4rem;
 	line-height: 1.6rem;
 	color: var(--text-body);
+}
+
+.main__section--special {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 400px;
+	background: url(../images/bg-pattern-circles.svg) no-repeat -120% 85% / 85%,
+		var(--gradient-secondary);
+	margin: 2rem 0 15rem 0;
+	border-radius: 0 var(--radius-xl) 0 var(--radius-xl);
+}
+
+.main__section--special div {
+	width: 40%;
+	height: auto;
+	padding: 2rem 2vw;
+}
+
+.main__section--special div h2 {
+	color: var(--text-white);
+	height: 4rem;
+}
+
+.main__section--special div p {
+	color: var(--text-white);
+	line-height: 1.6rem;
+	text-align: left;
 }
